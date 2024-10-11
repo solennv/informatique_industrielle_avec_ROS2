@@ -1,7 +1,5 @@
-sphinx-rtd-theme
-sphinxcontrib-plantuml
-sphinx-mdinclude
-breathe
-exhale
+mistune < 1.0.0
+myst-parser
 sphinx-copybutton
 sphinx-tabs
+sphinx_rtd_theme
