@@ -21,7 +21,7 @@ Cela donne la possibilité de développer des applications robotiques complexes 
 Pour ce cours cela permet d'étudier un système avancé de développement logiciel permettant d'intégrer des logiciels de différentes natures tout en conservant une cohérence d'ensemble et une qualité de développement la plus grande possible.
 Ce sont des qualités essentielles pour un projet informatique moderne et sont très recherchées dans l'informatique et l'industrie de la robotique.
 
-ROS2 est conçu pour être utilisé dans des applications industrielles et commerciales, et fournit des outils et des bibliothèques très avancés pour le développement de logiciels pour les robots. Il est basé sur des standards industriels et est conçu pour être utilisé dans des environnements de production.
+ROS2 (Robot Operating System version 2) est conçu pour être utilisé dans des applications industrielles et commerciales, et fournit des outils et des bibliothèques très avancés pour le développement de logiciels pour les robots. Il est basé sur des standards industriels et est conçu pour être utilisé dans des environnements de production.
 
 C'est donc un cas d'étude particulièrement intéressant pour l'apprentissage des bonnes pratiques de développement logiciel.
 
@@ -48,7 +48,7 @@ Ce cours vous propose de découvrir l'aventure de la création d'un logiciel pou
 2. Ensuite nous allons étudier comment créer un système de tests automatisés pour C++ et Python.
 3. Nous présenterons le reporting d'erreur et les systèmes de mise-à-jour automatiques.
 
-Tout au long de ce cours nous utiliserons le systèmes ROS2 et des packages particulier de ROS2 pour illustrer les concepts abordés.
+Tout au long de ce cours nous utiliserons le système ROS2 et des packages particulier de ROS2 pour illustrer les concepts abordés.
 Pour ce cours vous développerez un logiciel de contrôle d'un robot déployé sur un raspberry pi.
 
 
