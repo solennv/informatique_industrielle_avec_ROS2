@@ -26,10 +26,13 @@ jobs:
             sudo apt-get update -qq
             sudo apt-get install -y -qq python3-sphinx
             cd ./doc/sphinx/
+            python3 -m venv .venv
+            source .venv/bin/activate
             pip install -r requirements.txt
       - name: Build documentation
         run: |
             cd ./doc/sphinx/
+            source .venv/bin/activate
             make html
             cd ../..
       - name: Create commit
