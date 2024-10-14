@@ -2,7 +2,7 @@
 
 Ce dépôt contient les sources d'un cours francophone présentant le développement informatique industriel avec une mise en contexte dans le cadre du développement informatique pour la robotique dans l'environnement : ROS2.
 
-- Cours donné a été donné pour la première fois à l'INSA de Strasbourg d'octobre 2024 à janvier 2025.
+- Ce cours a été donné pour la première fois à l'INSA de Strasbourg (octobre 2024 à janvier 2025).
 - Ce dépôt contient les sources du cours.
 - Ce cours constitue une mise en abîme des principes qu'il présente: il est sa propre documentation, et il est disponible à l'adresse suivante: [https://yguel.github.io/informatique_industrielle_avec_ROS2/](https://yguel.github.io/informatique_industrielle_avec_ROS2/)
 
