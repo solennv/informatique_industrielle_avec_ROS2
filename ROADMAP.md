@@ -63,7 +63,16 @@
   4. gdb
   5. vscode et les outils de debug
 
-#### Outils spécifiques à la robotique
+## Outils spécifiques à la robotique
 
   1. Simulation en robotique
   2. Simulation en robotique avec ROS2 et gazebo
+
+
+
+
+## Retour des étudiants, éléments à ajouter
+
+Je veux recommencer depuis mon projet sur github ?
+  1. clone
+  2. installer avec venv et requirements.txt
