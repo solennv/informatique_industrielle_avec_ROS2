@@ -1,10 +1,6 @@
-###########################################
-Cours d'Informatique Industrielle avec ROS2
-###########################################
-
-****************************************************************
-Introduction au développement informatique industriel avec ROS2
-****************************************************************
+*************************************
+Développement informatique avec ROS2
+*************************************
 
 | Ce cours est une introduction pratique aux bonnes pratiques de développement informatique en prenant comme cas d'étude le développement de logiciels pour des applications robotiques avec ROS2. ROS2 crée un environnement de développement logiciel générique pour la robotique.
 | La robotique étant un très très vaste domaine rassemblant des domaines variés: mécanique, électronique, informatique, intelligence artificielle, contrôle, vision, etc, la quantité de logiciels disponibles à travers ROS2 est très importante. Elle donne la possibilité de développer des applications robotiques complexes en combinant des logiciels existants.
@@ -15,9 +11,9 @@ Introduction au développement informatique industriel avec ROS2
 
 C'est donc un cas d'étude particulièrement intéressant pour l'apprentissage des bonnes pratiques de développement logiciel.
 
-=======================================
+***************************************
 Qu'est-ce qu'un logiciel de qualité ? 
-=======================================
+***************************************
 
 | Un logiciel de qualité est un logiciel qui fait ce qu'on lui demande de faire sans erreur ni faille de sécurité, qui est facile à utiliser et qui est facile à maintenir et à faire évoluer.
 | Pour ce faire il comporte souvent des librairies permettant un développement modulaire ainsi que la possibilité d'utiliser les fonctionnalités développées pour le logiciel dans d'autres logiciels.

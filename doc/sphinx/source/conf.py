@@ -64,6 +64,14 @@ source_suffix = [".rst", ".md"]
 #
 html_theme = 'sphinx_rtd_theme'
 
+html_sidebars = {
+    '**': [
+        'globaltoc.html',   # Use the global TOC instead of the local one
+        'relations.html',   # Adds links to the previous and next chapters
+        'searchbox.html',   # Adds a search box
+    ]
+}
+
 # -- Options for copybutton extension ----------------------------------------
 copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
 copybutton_prompt_is_regexp = True
