@@ -51,3 +51,4 @@ Création du fichier URDF
 =========================
 
 Dans un fichier URDF les modèles 3D sont référencés par des balises ``<mesh>``.
+J'ai compris
