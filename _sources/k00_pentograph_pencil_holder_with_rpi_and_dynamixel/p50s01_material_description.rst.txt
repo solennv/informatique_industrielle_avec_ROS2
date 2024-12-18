@@ -8,5 +8,9 @@ Le but de ce projet est, comme il l'a été dis sur la page précédente, de met
 
 Pour mettre en oeuvre ce projet, nous aurons besoin du matériel suivant : 
 
- * Une Raspberry Pi 5 où nous allons installer Ubuntu ainsi que ROS2 qui vous nous permettre de pouvoir céer les codes pour 
-
+ * Une Raspberry Pi 5 : Ce premier élément est l'ordinateur de notre projet. C'est sur cette carte que le système Ubuntu et la plateforme ROS2 vont être installés, la carte va donc nous servir pour controller les moteurs sur la Dynamixel mais aussi à réaliser les différentes simulations.
+ (insérer photo)
+ * Une Dynamixel : Ce deuxième élément nous sert à mettre en mouvemement les moteurs du pentographe, ais aussi à récupérer l'état des moteurs, comme leur position ou leur vitesse.
+ (insérer photo)
+ * Un pentographe : Ce dernier élément est le mécanisme que nous cherchons à mettre en mouvement à la fin du projet.
+ (insérer photo)
