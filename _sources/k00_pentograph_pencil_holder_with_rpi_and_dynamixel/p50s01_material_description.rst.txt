@@ -8,5 +8,5 @@ Le but de ce projet est, comme il l'a été dis sur la page précédente, de met
 
 Pour mettre en oeuvre ce projet, nous aurons besoin du matériel suivant : 
 
-#. Une Raspberry Pi 5 où nous allons installer Ubuntu ainsi que ROS2 afin de pouvoir controller 
+ * Une Raspberry Pi 5 où nous allons installer Ubuntu ainsi que ROS2 qui vous nous permettre de pouvoir céer les codes pour 
 
