@@ -24,6 +24,14 @@ Table des matières
    p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index
    p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index
 
+.. toctree::
+   :maxdepth: 3 
+   :caption: Travaux Pratiques complété
+
+   k00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index
+   k01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index
+
+
 
 **************************
 Index, figures et tableaux
