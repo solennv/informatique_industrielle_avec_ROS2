@@ -20,9 +20,9 @@ Pour mettre en oeuvre ce projet, nous aurons besoin du matériel suivant :
    :width: 50%
    :height: auto
 
-* Un pentographe : Ce dernier élément est le mécanisme que nous cherchons à mettre en mouvement à la fin du projet.
+* Un Pantographe : Ce dernier élément est le mécanisme que nous cherchons à mettre en mouvement à la fin du projet.
 
-.. figure:: resources/img/Pantogrographe.jpg
+.. figure:: resources/img/Pentographe.jpg
    :align: center
    :width: 50%
    :height: auto
