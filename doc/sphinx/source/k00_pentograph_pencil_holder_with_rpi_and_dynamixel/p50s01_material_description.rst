@@ -11,18 +11,23 @@ Pour mettre en oeuvre ce projet, nous aurons besoin du matériel suivant :
 .. figure:: resources/img/rasppi.jpg
    :align: center
    :width: 50%
-   :height: auto
+
+
+Lien vers la datasheet de la Raspberry Pi 5 : https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf
+
 
 * Une Dynamixel : Ce deuxième élément nous sert à mettre en mouvemement les moteurs du pentographe, ais aussi à récupérer l'état des moteurs, comme leur position ou leur vitesse.
 
 .. figure:: resources/img/Dynamixel.jpg
    :align: center
    :width: 50%
-   :height: auto
+
+
+Lien vers la datasheet de la Dynamixel : https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/
+
 
 * Un Pantographe : Ce dernier élément est le mécanisme que nous cherchons à mettre en mouvement à la fin du projet.
 
 .. figure:: resources/img/Pentographe.jpg
    :align: center
    :width: 50%
-   :height: auto

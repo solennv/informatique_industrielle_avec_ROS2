@@ -7,18 +7,16 @@ Afin de pouvoir de pouvoir installer ROS 2 sur la Raspberry Pi, il nous faut tou
 Pour créer cette nouvelle session, il faut d'abord accéder aux paramètres.
 Ensuite, dans la barre de gauche et dans l'onglet utilisateur, il faut cliquer sur le bouton vert "Ajouter un utilisateur ..." comme montré sur l'image suivante : 
 
-.. figure:: resources/img/nov_utilisateur.png
+.. figure:: ressources/images/nov_utilisateur.png
    :align: center
    :width: 50%
-   :height: auto
 
 
 De cette manière nous pouvez créer une session pour un nouvel utilisateur en remplissant les différents champs selon vos choix :
 
-.. figure:: resources/img/crea_nov_util.png
+.. figure:: ressources/images/crea_nov_util.png
    :align: center
    :width: 50%
-   :height: auto
 
 Une fois que le nouvel utilisateur est créé, l'installation de ROS2 peut débuter : 
 
@@ -31,11 +29,24 @@ Pour installer ce métasystème d'exploitation, nous allons suivre la documentat
 
 En suivant les instructions de ce lien, l'installation devrait ce faire sans problèmes et sans erreurs. Toutefois attention, l'installation de ROS2 jazzy peut prendre du temps et demande une certaine quantité de données. Nous vous conseillons donc de connecter la raspberry à un réseau WiFi pour effectuer l'installation.
 
-Finalemennt, pour finir l'installation de tous les logiciels nécessaires au fonctionnement du projet, nous allons installer VScode. Cette installation se fait simplement à l'aide de la commande suivante :
+Pour faciliter l'utilisation de ROS2 dans le suite des opérations, des macros peuvent être ajoutées au ficher bash. Il faut tout d'avord ouvrir le fichier :
 
 .. code-block:: bash
 
-   code sudo apt install code
+   cd ~/.bashrc
+
+Puis, en ajouter le code suivant à la fin :
+
+.. literalinclude:: resources/code/_.bashrc
+   :language: bash
+   :caption: Addons au fichier .bashrc
+   :linenos:
+
+Finalement, pour finir l'installation de tous les logiciels nécessaires au fonctionnement du projet, nous allons installer VScode. Cette installation se fait simplement à l'aide de la commande suivante :
+
+.. code-block:: bash
+
+   sudo apt install code
 
 .. Décrire les étapes pour installer ROS2 sous ubuntu sur le Raspberry Pi 5
 .. Décrire les tests pour vérifier l'installation
