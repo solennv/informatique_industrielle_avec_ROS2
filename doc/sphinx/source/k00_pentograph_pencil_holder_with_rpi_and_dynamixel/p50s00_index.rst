@@ -8,6 +8,7 @@ Pantographe de dessin robotisé avec Raspberry Pi et ROS2
    p50s01_material_description
    p50s02_mechanical_description
    p50s03_urdf
+   p50s04_dinamixel
 
 .. figure:: resources/img/real_system_photo.png
    :align: center
@@ -31,3 +32,6 @@ Le projet consiste donc à:
 La documentation correspondra à un fork de ce projet et sera publiée sur votre github.
 Dans ce projet un canevas de documentation est fourni. Vous devrez le compléter et le publier.
 Vous soumettrez votre travail sous forme de push request à ce projet.
+
+
+

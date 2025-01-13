@@ -1,0 +1,92 @@
+<robot name="test_dae">
+  <!-- Base fixe -->
+  <link name="base">
+    <visual>
+      <geometry>
+        <mesh filename="base.dae"/> <!-- Fichier de la base -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="1.57 0 0"/> <!-- Orientation -->
+    </visual>
+  </link>
+
+  <!-- Premier bras -->
+  <link name="link1">
+    <visual>
+      <geometry>
+        <mesh filename="link1.dae"/> <!-- Fichier du premier bras -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="1.57 0 0"/> <!-- Position relative au centre de la base -->
+    </visual>
+  </link>
+
+  <!-- Joint entre base et link1 -->
+  <joint name="joint_base_link1" type="revolute">
+    <parent link="base"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/> <!-- Point de pivot -->
+    <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    <axis xyz="0 0 1"/> <!-- Rotation autour de l'axe Z -->
+  </joint>
+
+  <!--  Deuxième bras -->
+  <link name="link2">
+    <visual>
+      <geometry>
+      
+        <mesh filename="link2.dae"/> <!-- Fichier du deuxième bras -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="1.57 0 0"/> <!-- Orientation  -->
+    </visual>
+  </link>
+
+  <!-- Joint entre link1 et link2 -->
+  <joint name="joint_link1_link2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/> <!-- Position relative au bout de link1 -->
+    <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    <axis xyz="0 0 1"/> 
+  </joint>
+
+  <!-- Troisième bras -->
+  <link name="link3">
+    <visual>
+      <geometry>
+        <mesh filename="link3.dae"/> 
+      </geometry>
+    
+      <origin xyz="0 0 0" rpy="1.57 0 0"/> 
+    </visual>
+  </link>
+
+  <!-- Joint entre link2 et link3 -->
+  <joint name="joint_link2_link3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+    <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    <axis xyz="0 0 1"/> 
+  </joint>
+
+  <!-- Dernier bras -->
+  <link name="link4">
+    <visual>
+      <geometry>
+        <mesh filename="link4.dae"/> 
+      </geometry>
+       <material name = "green"/>
+      <origin xyz="0 0 0" rpy="1.57 0 0"/> 
+    </visual>
+  </link>
+
+  <!-- Joint entre link3 et link4 -->
+  <joint name="joint_link3_link4" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+    <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    <axis xyz="0 0 1"/> 
+  </joint>
+
+</robot>
+
