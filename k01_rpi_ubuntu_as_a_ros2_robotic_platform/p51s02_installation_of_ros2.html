@@ -102,12 +102,31 @@
              
   <section id="installation-de-ros2-sur-le-raspberry-pi-5">
 <h1>Installation de ROS2 sur le Raspberry Pi 5<a class="headerlink" href="#installation-de-ros2-sur-le-raspberry-pi-5" title="Lien vers cette rubrique"></a></h1>
-<p>Afin de pouvoir de pouvoir installer ROS 2 sur la Raspberry Pi, il nous faut tout d’abord créer une nouvelle session sur le système Ubuntu. Cette session nous est utile afin de travailler sur la Raspberry sans empêcher le travail des autres groupes pouvant travailler avec la même carte.</p>
+<p>Afin de pouvoir de pouvoir installer ROS 2 sur la Raspberry Pi, il nous faut tout d’abord créer une nouvelle session sur le système Ubuntu. Cette session nous est utile afin de travailler sur la Raspberry sans empêcher le travail des autres groupes travaillants avec la même carte.</p>
 <p>Pour créer cette nouvelle session, il faut d’abord accéder aux paramètres.
-Ensuite, dans la barre de gauche et dans l’onglety utilisateur, il faut cliquer sur le bouton vert « Ajouter un utilisateur … » comme montré sur les photos suivantes :</p>
-<blockquote>
-<div><p>(Ajouter image montrant les deux liens à cliquer)</p>
-</div></blockquote>
+Ensuite, dans la barre de gauche et dans l’onglet utilisateur, il faut cliquer sur le bouton vert « Ajouter un utilisateur … » comme montré sur l’image suivante :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/nov_utilisateur.png"><img alt="../_images/nov_utilisateur.png" src="../_images/nov_utilisateur.png" style="width: 50%;" />
+</a>
+</figure>
+<p>De cette manière nous pouvez créer une session pour un nouvel utilisateur en remplissant les différents champs selon vos choix :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/crea_nov_util.png"><img alt="../_images/crea_nov_util.png" src="../_images/crea_nov_util.png" style="width: 50%;" />
+</a>
+</figure>
+<p>Une fois que le nouvel utilisateur est créé, l’installation de ROS2 peut débuter :</p>
+<p>Il faut tout d’abord choisir la version de ROS la plus adéquate avec la version d’Ubuntu qui a été précédemment intallé. Dans notre cas nous avons la version Ubuntu LTS 24.04, nous devons donc installer ROS2 jazzy.</p>
+<p>Pour installer ce métasystème d’exploitation, nous allons suivre la documentation suivante :</p>
+<p>En suivant les instructions de ce lien, l’installation devrait ce faire sans problèmes et sans erreurs. Toutefois attention, l’installation de ROS2 jazzy peut prendre du temps et demande une certaine quantité de données. Nous vous conseillons donc de connecter la raspberry à un réseau WiFi pour effectuer l’installation.</p>
+<p>Pour faciliter l’utilisation de ROS2 dans le suite des opérations, des macros peuvent être ajoutées au ficher bash. Il faut tout d’avord ouvrir le fichier :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/.bashrc
+</pre></div>
+</div>
+<p>Puis, en ajouter le code suivant à la fin :</p>
+<p>Finalement, pour finir l’installation de tous les logiciels nécessaires au fonctionnement du projet, nous allons installer VScode. Cette installation se fait simplement à l’aide de la commande suivante :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>code
+</pre></div>
+</div>
 <section id="sources-documentaires">
 <h2>Sources documentaires<a class="headerlink" href="#sources-documentaires" title="Lien vers cette rubrique"></a></h2>
 <ol class="arabic simple">

@@ -24,6 +24,7 @@
       <script src="../_static/copybutton.js?v=30646c52"></script>
       <script src="../_static/translations.js?v=e6b791cb"></script>
       <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
@@ -102,9 +103,15 @@
              
   <section id="description-mecanique-de-la-plateforme-pantographe">
 <h1>Description mécanique de la plateforme pantographe<a class="headerlink" href="#description-mecanique-de-la-plateforme-pantographe" title="Lien vers cette rubrique"></a></h1>
+<p>Le pantographe peut être représenté avec le paramétrage suivant :</p>
 <figure class="align-center">
 <img alt="../_images/schema_cinematique.svg" src="../_images/schema_cinematique.svg" />
 </figure>
+<p>Ce Paramétrage nous permet de mettre en place les équations régissant le Modèle Géométrique Direct (MGD) du pantographe :</p>
+<p>Pour mettre en place ces équations, nous pouvons constater que chaqun des bras du pantographe ce déplace selon un disque de rayon maximal l1+l2 et l3+l4. Nous cherchons donc l’intersection des deux cercles de centre A2 et A4 et de rayon l2 et l4 respectivement. Le calcul de l’intersection des plans nous donne les équations suivantes :</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}x = l_2*cos(\theta_2) + l_4*cos(\theta_4) + A\\y = l_2*sin(\theta_2) + l_4*sin(\theta_4)\end{aligned}\end{align} \]</div>
+<p>Avec A le décalage du stylo.</p>
 </section>
 
 

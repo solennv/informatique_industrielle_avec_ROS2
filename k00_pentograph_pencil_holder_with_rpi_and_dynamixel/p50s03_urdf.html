@@ -153,8 +153,43 @@ Il va donc falloir convertir notre modèle 3D au format step en un ensemble de 5
 </section>
 <section id="creation-du-fichier-urdf">
 <h2>Création du fichier URDF<a class="headerlink" href="#creation-du-fichier-urdf" title="Lien vers cette rubrique"></a></h2>
-<p>Dans un fichier URDF les modèles 3D sont référencés par des balises <code class="docutils literal notranslate"><span class="pre">&lt;mesh&gt;</span></code>.
-J’ai compris</p>
+<p>La première étape pour pouvoir créer le fichier et donc de télécharger les modèles .dae précédents. Chacun des modèles correspond à la description d’un élément du mécanisme et peut être assemblé avec le code urdf du mécanisme. Le code urdf du mécanisme est le suivant :</p>
+<p>Ce code est une reprise du code urdf du robot scara disponible dans les parties précédentes. Dans notre cas, la structure de notre code est simplifié comparé à celui du robot scara. En effet les fichiers .dae comprennent directement les caractéristiues des pièces comme la couleur, leurs dimensions …</p>
+<p>Pour lier une pièce au pantographe il suffit donc d’appeler la pièce sous sa version .dae et de fixer son origine et son orientation comme présenté dans l’image ci-dessous :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/def_piece_urdf.png"><img alt="../_images/def_piece_urdf.png" src="../_images/def_piece_urdf.png" style="width: 50%;" />
+</a>
+</figure>
+<p>La déclaration des liaisons entre les pièces se fait elle de la même manière que dans le cas du robot scara. Ici toutes les liaisons entre les pièces sont des liaisons de révolution (revolute).</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/def_liaison_urdf.png"><img alt="../_images/def_liaison_urdf.png" src="../_images/def_liaison_urdf.png" style="width: 50%;" />
+</a>
+</figure>
+<p>Afin de visualiser le mécanisme, un dernier logiciel doit être installé sur VSCode, le logiciel URDF Visualizer</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/urdf_visualizer.png"><img alt="../_images/urdf_visualizer.png" src="../_images/urdf_visualizer.png" style="width: 50%;" />
+</a>
+</figure>
+<p>De cette menière en retournant dans le fichier précédent sur VSCode, en faisant un clic-droit et en cliquant sur “Command Palette…”</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/command_palette.png"><img alt="../_images/command_palette.png" src="../_images/command_palette.png" style="width: 25%;" />
+</a>
+</figure>
+<p>Nous avons le champs suivant qui souvre et il suffit donc de cliquer sur “URDF Visaulizer: Preview URDF/Xacro” puis sur “Reload”</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/preview_urdf.png"><img alt="../_images/preview_urdf.png" src="../_images/preview_urdf.png" style="width: 50%;" />
+</a>
+</figure>
+<p>Finalement la représentation du pantographe s’affiche :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/pantographe_urdf.png"><img alt="../_images/pantographe_urdf.png" src="../_images/pantographe_urdf.png" style="width: 50%;" />
+</a>
+</figure>
+<p>Pour un rendu plus clair, nous pouvons changer la couleur des pièces dans les fichiers dae et en changeant les deux valeurs surlignées par des valeurs du RGB.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/chang_couleur.png"><img alt="../_images/chang_couleur.png" src="../_images/chang_couleur.png" style="width: 50%;" />
+</a>
+</figure>
 </section>
 </section>
 

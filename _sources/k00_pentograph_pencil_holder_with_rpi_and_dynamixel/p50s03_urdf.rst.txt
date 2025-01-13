@@ -50,5 +50,56 @@ Pour convertir les modèles 3D en collada (dae), vous pouvez utiliser le logicie
 Création du fichier URDF
 =========================
 
-Dans un fichier URDF les modèles 3D sont référencés par des balises ``<mesh>``.
-J'ai compris
+La première étape pour pouvoir créer le fichier et donc de télécharger les modèles .dae précédents. Chacun des modèles correspond à la description d'un élément du mécanisme et peut être assemblé avec le code urdf du mécanisme. Le code urdf du mécanisme est le suivant : 
+
+.. code à insérer
+
+Ce code est une reprise du code urdf du robot scara disponible dans les parties précédentes. Dans notre cas, la structure de notre code est simplifié comparé à celui du robot scara. En effet les fichiers .dae comprennent directement les caractéristiues des pièces comme la couleur, leurs dimensions ...
+
+Pour lier une pièce au pantographe il suffit donc d'appeler la pièce sous sa version .dae et de fixer son origine et son orientation comme présenté dans l'image ci-dessous : 
+
+.. figure:: resources/img/def_piece_urdf.png
+   :align: center
+   :width: 50%
+
+
+La déclaration des liaisons entre les pièces se fait elle de la même manière que dans le cas du robot scara. Ici toutes les liaisons entre les pièces sont des liaisons de révolution (revolute). 
+
+.. figure:: resources/img/def_liaison_urdf.png
+   :align: center
+   :width: 50%
+
+Afin de visualiser le mécanisme, un dernier logiciel doit être installé sur VSCode, le logiciel URDF Visualizer
+
+.. figure:: resources/img/urdf_visualizer.png
+   :align: center
+   :width: 50%
+
+De cette menière en retournant dans le fichier précédent sur VSCode, en faisant un clic-droit et en cliquant sur 'Command Palette...'
+
+.. figure:: resources/img/command_palette.png
+   :align: center
+   :width: 25%
+
+Nous avons le champs suivant qui souvre et il suffit donc de cliquer sur 'URDF Visaulizer: Preview URDF/Xacro' puis sur 'Reload'
+
+.. figure:: resources/img/preview_urdf.png
+   :align: center
+   :width: 50%
+
+Finalement la représentation du pantographe s'affiche : 
+
+.. figure:: resources/img/pantographe_urdf.png
+   :align: center
+   :width: 50%
+
+Pour un rendu plus clair, nous pouvons changer la couleur des pièces dans les fichiers dae et en changeant les deux valeurs surlignées par des valeurs du RGB.
+
+.. figure:: resources/img/chang_couleur.png
+   :align: center
+   :width: 50%
+
+
+
+
+
