@@ -52,7 +52,9 @@ Création du fichier URDF
 
 La première étape pour pouvoir créer le fichier et donc de télécharger les modèles .dae précédents. Chacun des modèles correspond à la description d'un élément du mécanisme et peut être assemblé avec le code urdf du mécanisme. Le code urdf du mécanisme est le suivant : 
 
-.. code à insérer
+.. literalinclude:: resources/code/pantographe.urdf
+   :language: xml
+
 
 Ce code est une reprise du code urdf du robot scara disponible dans les parties précédentes. Dans notre cas, la structure de notre code est simplifié comparé à celui du robot scara. En effet les fichiers .dae comprennent directement les caractéristiues des pièces comme la couleur, leurs dimensions ...
 

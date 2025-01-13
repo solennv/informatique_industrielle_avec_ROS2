@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pantographe de dessin robotisé avec Raspberry Pi et ROS2 &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
+  <title>Mise en place du contrôle des moteurs &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
@@ -24,12 +24,11 @@
       <script src="../_static/copybutton.js?v=30646c52"></script>
       <script src="../_static/translations.js?v=e6b791cb"></script>
       <script src="../_static/design-tabs.js?v=f930bc37"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Description du matériel de la plateforme pantographe" href="p50s01_material_description.html" />
-    <link rel="prev" title="Installation de ROS2 sur le Raspberry Pi 5" href="../p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s02_installation_of_ros2.html" /> 
+    <link rel="next" title="Ubuntu &amp; RPi &amp; ROS2" href="../k01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index.html" />
+    <link rel="prev" title="Génération de la description URDF du pantographe" href="p50s03_urdf.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -66,12 +65,12 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Travaux Pratiques complété</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="p50s00_index.html">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="p50s01_material_description.html">Description du matériel de la plateforme pantographe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="p50s02_mechanical_description.html">Description mécanique de la plateforme pantographe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="p50s03_urdf.html">Génération de la description URDF du pantographe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="p50s04_dinamixel.html">Mise en place du contrôle des moteurs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#description-du-projet">Description du projet</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Mise en place du contrôle des moteurs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p50s00_index.html#description-du-projet">Description du projet</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../k01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index.html">Ubuntu &amp; RPi &amp; ROS2</a></li>
@@ -91,9 +90,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</li>
+          <li class="breadcrumb-item"><a href="p50s00_index.html">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</a></li>
+      <li class="breadcrumb-item active">Mise en place du contrôle des moteurs</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/k00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+            <a href="../_sources/k00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s04_dinamixel.rst.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
   </ul>
   <hr/>
@@ -101,50 +101,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="pantographe-de-dessin-robotise-avec-raspberry-pi-et-ros2">
-<h1>Pantographe de dessin robotisé avec Raspberry Pi et ROS2<a class="headerlink" href="#pantographe-de-dessin-robotise-avec-raspberry-pi-et-ros2" title="Lien vers cette rubrique"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="p50s01_material_description.html">Description du matériel de la plateforme pantographe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p50s02_mechanical_description.html">Description mécanique de la plateforme pantographe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p50s03_urdf.html">Génération de la description URDF du pantographe</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="p50s03_urdf.html#extraction-des-modeles-3d-en-step">Extraction des modèles 3D en step</a></li>
-<li class="toctree-l2"><a class="reference internal" href="p50s03_urdf.html#conversion-des-modeles-3d-en-collada">Conversion des modèles 3D en collada</a></li>
-<li class="toctree-l2"><a class="reference internal" href="p50s03_urdf.html#creation-du-fichier-urdf">Création du fichier URDF</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="p50s04_dinamixel.html">Mise en place du contrôle des moteurs</a></li>
-</ul>
-</div>
-<figure class="align-center">
-<img alt="../_images/real_system_photo.png" src="../_images/real_system_photo.png" />
-</figure>
-<section id="description-du-projet">
-<h2>Description du projet<a class="headerlink" href="#description-du-projet" title="Lien vers cette rubrique"></a></h2>
-<p>Pour ce travail pratique, vous allez installer une plateforme robotique ROS2 sur un Raspberry Pi (Pi5) et documenter le projet.
-Le projet consiste donc à:</p>
-<ol class="arabic simple">
-<li><p>installer Ubuntu sur le Raspberry Pi,</p></li>
-<li><p>installer ROS2,</p></li>
-<li><p>tester et documenter les tests de l’installation système</p></li>
-<li><p>Créer la rerprésentation mécanique du pantographe dans un fichier URDF</p></li>
-<li><p>Créer un package ROS2 pour contrôler le pantographe</p></li>
-<li><p>Créer des tests et documenter les tests</p></li>
-<li><p>Tester en simulation avec Gazebo et RViz</p></li>
-<li><p>Tester en réel avec le pantographe</p></li>
-</ol>
-<p>La documentation correspondra à un fork de ce projet et sera publiée sur votre github.
-Dans ce projet un canevas de documentation est fourni. Vous devrez le compléter et le publier.
-Vous soumettrez votre travail sous forme de push request à ce projet.</p>
-</section>
+  <section id="mise-en-place-du-controle-des-moteurs">
+<h1>Mise en place du contrôle des moteurs<a class="headerlink" href="#mise-en-place-du-controle-des-moteurs" title="Lien vers cette rubrique"></a></h1>
+<p>Maintenant que nous avons mis en place le modèle urdf du pentographe et installé tous les logiciels nécessaires sur la Raspberry Pi 5, nous pouvons mettre en place le contrôle des moteurs du pantographe. Pour ce faire nous allons suivre le tuto suivant qui permet de mettre en lien ROS 2 et les dinamixels :</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?app=desktop&amp;v=E8XPqDjof4U&amp;t=92s">https://www.youtube.com/watch?app=desktop&amp;v=E8XPqDjof4U&amp;t=92s</a></p>
+<p>Ce tuto mène au télèchargemet de plusieurs dossiers, cependant si l’on cherche à utiliser les fichiers tels quel, les moteurs ne répondront pas aux commandes de la Raspberry. Il faut donc changer le code du fichier “read_write.cpp”.</p>
+<p>Il faut donc vérifier que la table est associée au bon moteur, dans notre cas les moteurs utilisés sont les moteurs AX12.</p>
+<p>Il faut également vérifier la version du protocole de communication est bien sur 1.0 en raison du modèle de notre moteur.</p>
+<p>Il faut également vérifier que la varible baudrate est bien à 115200. Nous pouvons aussi utiliser l’application wizard afin de vérifier tous les ports connectés et nous donne la valeur du baudrate associé à chacun de ces ports.</p>
+<p>En suivant l’entièreté de ce tuto et en appliquant les modifications précédement énoncées, nous pouvons faire fonctionner les moteurs à l’aide de la Raspberry Pi 5.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
-        <a href="../p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s02_installation_of_ros2.html" class="btn btn-neutral float-left" title="Installation de ROS2 sur le Raspberry Pi 5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
-        <a href="p50s01_material_description.html" class="btn btn-neutral float-right" title="Description du matériel de la plateforme pantographe" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="p50s03_urdf.html" class="btn btn-neutral float-left" title="Génération de la description URDF du pantographe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="../k01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index.html" class="btn btn-neutral float-right" title="Ubuntu &amp; RPi &amp; ROS2" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
