@@ -13,9 +13,13 @@ Pour mettre en place ces équations, nous pouvons constater que chaqun des bras 
 
 .. math::
 
-   x = l_2*cos(\theta_2) + l_4*cos(\theta_4) + A
+   A_x = -l_5*sin(q_2)
 
-   y = l_2*sin(\theta_2) + l_4*sin(\theta_4)
+   A_y = l_5*cos(q_2)
+
+   x = l_2*cos(q_1) + l_4*cos(q_4) + A_x
+
+   y = l_2*sin(q_1) + l_4*sin(q_4) + A_y
 
 
-Avec A le décalage du stylo.
+Avec :math:`l_5` le décalage du stylo.
